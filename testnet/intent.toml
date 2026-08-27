@@ -1,0 +1,52 @@
+configType = "custom"
+opDeployerVersion = "0.6.0-e8abf571-2026-04-02T10:18:56Z"
+l1ChainID = 11155111
+fundDevAccounts = false
+l1ContractsLocator = "embedded"
+l2ContractsLocator = "embedded"
+[globalDeployOverrides]
+    l2BlockTime = 1
+    # Time a withdrawal proof must mature before finalization
+    proofMaturityDelaySeconds       = 900      # 15 min
+    # Additional dispute game finality delay
+    disputeGameFinalityDelaySeconds = 300      # 5 min
+    # Withdrawal delay after a valid proof/game
+    faultGameWithdrawalDelay        = 600      # 10 min
+    # Fault game clock configuration
+    faultGameClockExtension         = 300      # 5 min
+    faultGameMaxClockDuration       = 900      # 15 min
+    # PreimageOracle challenge period
+    preimageOracleChallengePeriod   = 300      # 5 min
+[superchainRoles]
+    SuperchainProxyAdminOwner = "0x044a91B182C3B4c1b645421d9a3c498Dfa7cCb85"
+    SuperchainGuardian = "0x044a91B182C3B4c1b645421d9a3c498Dfa7cCb85"
+    ProtocolVersionsOwner = "0x044a91B182C3B4c1b645421d9a3c498Dfa7cCb85"
+    Challenger = "0xDbF9caAd3419442828Bca5fe0ED742685A6f74A2"
+[[chains]]
+    id = "0x0000000000000000000000000000000000000000000000000000000000000752"
+
+    baseFeeVaultRecipient = "0x044a91B182C3B4c1b645421d9a3c498Dfa7cCb85"
+    l1FeeVaultRecipient = "0x044a91B182C3B4c1b645421d9a3c498Dfa7cCb85"
+    sequencerFeeVaultRecipient = "0x044a91B182C3B4c1b645421d9a3c498Dfa7cCb85"
+    operatorFeeVaultRecipient = "0x044a91B182C3B4c1b645421d9a3c498Dfa7cCb85"
+    eip1559DenominatorCanyon = 250
+    eip1559Denominator = 100
+    eip1559Elasticity = 6
+    gasLimit = 40000000
+    operatorFeeScalar = 0
+    operatorFeeConstant = 0
+    chainFeesRecipient = "0x044a91B182C3B4c1b645421d9a3c498Dfa7cCb85"
+    minBaseFee = 5000000000
+    daFootprintGasScalar = 0
+    [chains.roles]
+        l1ProxyAdminOwner = "0x044a91B182C3B4c1b645421d9a3c498Dfa7cCb85"
+        l2ProxyAdminOwner = "0x044a91B182C3B4c1b645421d9a3c498Dfa7cCb85"
+        systemConfigOwner = "0x96eA6e813328FcF11b577193f59C762e6c3166c9"
+        unsafeBlockSigner = "0x5c846d98a3b37CAe4b1A55c6B66DCD94df137363"
+        batcher = "0x7D451299Ab21Bfa7132c690b91D749756ec1Dbb7"
+        proposer = "0x422aF6C5af85798414F1Cb8df68716B70A80C63d"
+        challenger = "0xDbF9caAd3419442828Bca5fe0ED742685A6f74A2"
+    [chains.customGasToken]
+        name = "WhiteBIT Coin"
+        symbol = "WBT"
+        liquidityControllerOwner = "0x044a91B182C3B4c1b645421d9a3c498Dfa7cCb85"

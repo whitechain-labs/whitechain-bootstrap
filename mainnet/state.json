@@ -5,7 +5,7 @@
   "appliedIntent": {
     "configType": "custom",
     "opDeployerVersion": "v0.7.1-75254822-1779890299",
-    "l1ChainID": 11155111,
+    "l1ChainID": 1,
     "opcmAddress": null,
     "superchainConfigProxy": null,
     "superchainRoles": {
@@ -64,7 +64,7 @@
   "prestateManifest": null,
   "interopDepSet": {
     "dependencies": {
-      "2249": {}
+      "1875": {}
     }
   },
   "superchainContracts": {

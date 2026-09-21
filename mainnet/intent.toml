@@ -1,0 +1,44 @@
+configType = "custom"
+opDeployerVersion = "v0.7.1-75254822-1779890299"
+l1ChainID = 1
+fundDevAccounts = false
+l1ContractsLocator = "embedded"
+l2ContractsLocator = "embedded"
+useInterop = false
+
+[globalDeployOverrides]
+  l2BlockTime = 1
+
+[superchainRoles]
+  SuperchainProxyAdminOwner = "0x16430D8D0c30889b565F380B64021142a2A5106c"
+  SuperchainGuardian = "0x16430D8D0c30889b565F380B64021142a2A5106c"
+  ProtocolVersionsOwner = "0x16430D8D0c30889b565F380B64021142a2A5106c"
+  Challenger = "0x6FaAd3617Fcb909092d2Fb0D8F5e3aaA66EB25D5"
+
+[[chains]]
+  id = "0x00000000000000000000000000000000000000000000000000000000000008c9"
+  baseFeeVaultRecipient = "0x16430D8D0c30889b565F380B64021142a2A5106c"
+  l1FeeVaultRecipient = "0x16430D8D0c30889b565F380B64021142a2A5106c"
+  sequencerFeeVaultRecipient = "0x16430D8D0c30889b565F380B64021142a2A5106c"
+  operatorFeeVaultRecipient = "0x16430D8D0c30889b565F380B64021142a2A5106c"
+  chainFeesRecipient = "0x16430D8D0c30889b565F380B64021142a2A5106c"
+  eip1559DenominatorCanyon = 250
+  eip1559Denominator = 100
+  eip1559Elasticity = 6
+  gasLimit = 40000000
+  operatorFeeScalar = 0
+  operatorFeeConstant = 0
+  minBaseFee = 5000000000
+  daFootprintGasScalar = 0
+[chains.roles]
+  l1ProxyAdminOwner = "0x4BD9C9c94A0f62E915448675eee0e46F5557398D"
+  l2ProxyAdminOwner = "0x5ceaC9c94a0F62e915448675eeE0e46f55574a9e"
+  systemConfigOwner = "0x4BD9C9c94A0f62E915448675eee0e46F5557398D"
+  unsafeBlockSigner = "0xCB376067c43F9Da057002EDc8d49836b2BFcAe6A"
+  batcher = "0xE809f78E49735A944140A6E9eBA4a7af43764771"
+  proposer = "0x164Bf40A48Fa4a8710D3dB51f863706fAD403C0b"
+  challenger = "0x6FaAd3617Fcb909092d2Fb0D8F5e3aaA66EB25D5"
+[chains.customGasToken]
+  name = "WhiteBIT Coin"
+  symbol = "WBT"
+  liquidityControllerOwner = "0x16430D8D0c30889b565F380B64021142a2A5106c"

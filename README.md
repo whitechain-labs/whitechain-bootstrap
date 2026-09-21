@@ -9,7 +9,7 @@ The files here are what a node operator needs to start a Whitechain node from bl
 | Network | Directory | L2 chain ID | Settlement layer | Status |
 | --- | --- | --- | --- | --- |
 | Testnet | `testnet/` | 1874 | Ethereum Sepolia (11155111) | published |
-| Mainnet | `mainnet/` | – | – | not yet published |
+| Mainnet | `mainnet/` | 1875 | Ethereum (1) | not yet published |
 
 Each network directory is self-contained. Never mix files across networks – a genesis from one network will not match the rollup config of another.
 

@@ -21,9 +21,10 @@ Each network directory is self-contained. Never mix files across networks – a 
 | `rollup.json` | L2 consensus-layer (rollup) config. Consumed by `op-node`. Defines the L1 origin block, protocol activation times, sequencing windows and L1 system contract addresses. |
 | `l1-addresses.json` | Addresses of all L1 contracts deployed for the chain – portal, bridges, messengers, system config, dispute game factory and their implementations. Use it to verify on-chain deployments on the settlement layer. |
 | `intent.toml` | Deployment intent given to `op-deployer` – the human-authored input describing chain parameters, roles, fee recipients and the custom gas token. The source of truth for how the chain was configured. |
-| `state.json` | `op-deployer` output state – the full record of the deployment, including the applied intent and every deployed contract address. `genesis.json`, `rollup.json` and the deploy config are all derivable from it. |
+| `deploy-config.json` | Resolved OP Stack deploy config – the full parameter set the chain was deployed with, after intent defaults and overrides were merged. Published so the effective configuration can be read and diffed without running `op-deployer`. |
+| `state.json` | `op-deployer` output state – the full record of the deployment, including the applied intent and every deployed contract address. `genesis.json`, `rollup.json`, `l1-addresses.json` and `deploy-config.json` are all derivable from it. |
 
-Note: `deploy-config` is not stored as a separate file, it is contained in `state.json` and can be regenerated deterministically (see below).
+Note: only `genesis.json` and `rollup.json` are read by a running node. The other four files exist so the chain configuration and the L1 deployment can be checked independently, and all four are regenerated deterministically from `state.json` (see below).
 
 ## Usage
 
@@ -64,14 +65,16 @@ op-deployer inspect rollup        --workdir ./testnet 1874 > /tmp/rollup.json
 op-deployer inspect deploy-config --workdir ./testnet 1874 > /tmp/deploy-config.json
 op-deployer inspect l1            --workdir ./testnet 1874 > /tmp/l1-addresses.json
 
-diff <(jq -S . testnet/genesis.json) <(jq -S . /tmp/genesis.json)
-diff <(jq -S . testnet/rollup.json)  <(jq -S . /tmp/rollup.json)
+diff <(jq -S . testnet/genesis.json)       <(jq -S . /tmp/genesis.json)
+diff <(jq -S . testnet/rollup.json)        <(jq -S . /tmp/rollup.json)
+diff <(jq -S . testnet/deploy-config.json) <(jq -S . /tmp/deploy-config.json)
+diff <(jq -S . testnet/l1-addresses.json)  <(jq -S . /tmp/l1-addresses.json)
 ```
 
 Verify integrity of what you downloaded:
 
 ```bash
-shasum -a 256 testnet/*.json testnet/*.toml
+shasum -a 256 testnet/*
 ```
 
 Expected values for the current testnet set:

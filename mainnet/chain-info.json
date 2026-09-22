@@ -1,0 +1,40 @@
+{
+  "addresses": {
+    "OpChainProxyAdminImpl": "0xadd113320195b910dc221c3a969d1a07c9cf99e6",
+    "OptimismPortalProxy": "0xedf38bf02cd6acdbae3f1bfe7c3b90d8aa663046",
+    "AddressManagerImpl": "0xb3c8ff2ca97f68264a00509fbfb4eab6e836c775",
+    "L1Erc721BridgeProxy": "0x893ea56dd6c9cb2b8e85411a9dfa76eb5e78ffa5",
+    "SystemConfigProxy": "0xb36fdf201f084991b6d9903844ce3202b3ede908",
+    "OptimismMintableErc20FactoryProxy": "0xc9ca5563376bf543178dfe042e15070ecfb89fd5",
+    "L1StandardBridgeProxy": "0x7e56075fe3ebd1380887ddf871fcb092f922205e",
+    "L1CrossDomainMessengerProxy": "0xc77562dca9bf87866e78134fa196bc0823fcac49",
+    "EthLockboxProxy": "0x0000000000000000000000000000000000000000",
+    "DisputeGameFactoryProxy": "0x32f459437dcdc6f96c344f60eae2d12a29dbad95",
+    "AnchorStateRegistryProxy": "0x8d92a9ebe7f42b34fb67a8ba70356bb37acbf3a6",
+    "FaultDisputeGameImpl": "0x0000000000000000000000000000000000000000",
+    "FaultDisputeGameCannonKonaImpl": "0x0000000000000000000000000000000000000000",
+    "PermissionedDisputeGameImpl": "0xe1dffcbe4e22b813f26d2106d943c102e7cab87e",
+    "DelayedWethPermissionedGameProxy": "0xd0b24fa70ceba1c2dcaaaee80638847e1dbde0e9",
+    "DelayedWethPermissionlessGameProxy": "0x0000000000000000000000000000000000000000",
+    "AltDAChallengeProxy": "0x0000000000000000000000000000000000000000",
+    "AltDAChallengeImpl": "0x0000000000000000000000000000000000000000",
+    "L2OutputOracleProxy": "0x0000000000000000000000000000000000000000",
+    "SuperchainConfigProxy": "0xc9d1542ed6bb55a505308c81c6f165d009041c49",
+    "MipsImpl": "0xacc005dcd857b401e4732e6f7837135a22825cfa",
+    "PreimageOracleImpl": "0x1e1d73536a081ef2f355d29794547a9770aeb1e0"
+  },
+  "roles": {
+    "SystemConfigOwner": "0x4bd9c9c94a0f62e915448675eee0e46f5557398d",
+    "OpChainProxyAdminOwner": "0x4bd9c9c94a0f62e915448675eee0e46f5557398d",
+    "OpChainGuardian": "0x16430d8d0c30889b565f380b64021142a2a5106c",
+    "UnsafeBlockSigner": "0xcb376067c43f9da057002edc8d49836b2bfcae6a",
+    "BatchSubmitter": "0xe809f78e49735a944140a6e9eba4a7af43764771",
+    "Proposer": "0x164bf40a48fa4a8710d3db51f863706fad403c0b",
+    "Challenger": "0x6faad3617fcb909092d2fb0d8f5e3aaa66eb25d5"
+  },
+  "faultProofs": {
+    "permissioned": true,
+    "permissionless": false,
+    "respectedGameType": 1
+  }
+}

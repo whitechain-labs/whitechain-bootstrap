@@ -1,6 +1,6 @@
 configType = "custom"
-opDeployerVersion = "v0.7.1-75254822-1779890299"
-l1ChainID = 1
+opDeployerVersion = "v0.8.1-319e3da9-1791906182"
+l1ChainID = 11155111
 fundDevAccounts = false
 l1ContractsLocator = "embedded"
 l2ContractsLocator = "embedded"
@@ -10,18 +10,18 @@ useInterop = false
   l2BlockTime = 1
 
 [superchainRoles]
-  SuperchainProxyAdminOwner = "0x16430D8D0c30889b565F380B64021142a2A5106c"
-  SuperchainGuardian = "0x16430D8D0c30889b565F380B64021142a2A5106c"
-  ProtocolVersionsOwner = "0x16430D8D0c30889b565F380B64021142a2A5106c"
-  Challenger = "0x6FaAd3617Fcb909092d2Fb0D8F5e3aaA66EB25D5"
+  SuperchainProxyAdminOwner = "0x1FAF633e2f022Db2e5BDe14A8FA54698953A7F84"
+  SuperchainGuardian = "0x1006E813FEcd3E3ceE2593BB117FCa9bFd0160b9"
+  ProtocolVersionsOwner = "0x1FAF633e2f022Db2e5BDe14A8FA54698953A7F84"
+  Challenger = "0x0954cE098BD24f7cc5594437457985055DC90412"
 
 [[chains]]
-  id = "0x0000000000000000000000000000000000000000000000000000000000000753"
-  baseFeeVaultRecipient = "0x16430D8D0c30889b565F380B64021142a2A5106c"
-  l1FeeVaultRecipient = "0x16430D8D0c30889b565F380B64021142a2A5106c"
-  sequencerFeeVaultRecipient = "0x16430D8D0c30889b565F380B64021142a2A5106c"
-  operatorFeeVaultRecipient = "0x16430D8D0c30889b565F380B64021142a2A5106c"
-  chainFeesRecipient = "0x16430D8D0c30889b565F380B64021142a2A5106c"
+  id = "0x00000000000000000000000000000000000000000000000000000000000008c9"
+  baseFeeVaultRecipient = "0x602BAEB79a3c70e28b3b3AeaA79056282BAa30C7"
+  l1FeeVaultRecipient = "0x602BAEB79a3c70e28b3b3AeaA79056282BAa30C7"
+  sequencerFeeVaultRecipient = "0x602BAEB79a3c70e28b3b3AeaA79056282BAa30C7"
+  operatorFeeVaultRecipient = "0x602BAEB79a3c70e28b3b3AeaA79056282BAa30C7"
+  chainFeesRecipient = "0x602BAEB79a3c70e28b3b3AeaA79056282BAa30C7"
   eip1559DenominatorCanyon = 250
   eip1559Denominator = 100
   eip1559Elasticity = 6
@@ -30,15 +30,17 @@ useInterop = false
   operatorFeeConstant = 0
   minBaseFee = 5000000000
   daFootprintGasScalar = 0
-[chains.roles]
-  l1ProxyAdminOwner = "0x4BD9C9c94A0f62E915448675eee0e46F5557398D"
-  l2ProxyAdminOwner = "0x5ceaC9c94a0F62e915448675eeE0e46f55574a9e"
-  systemConfigOwner = "0x4BD9C9c94A0f62E915448675eee0e46F5557398D"
-  unsafeBlockSigner = "0xCB376067c43F9Da057002EDc8d49836b2BFcAe6A"
-  batcher = "0xE809f78E49735A944140A6E9eBA4a7af43764771"
-  proposer = "0x164Bf40A48Fa4a8710D3dB51f863706fAD403C0b"
-  challenger = "0x6FaAd3617Fcb909092d2Fb0D8F5e3aaA66EB25D5"
-[chains.customGasToken]
-  name = "WhiteBIT Coin"
-  symbol = "WBT"
-  liquidityControllerOwner = "0x16430D8D0c30889b565F380B64021142a2A5106c"
+  [chains.roles]
+    l1ProxyAdminOwner = "0x1FAF633e2f022Db2e5BDe14A8FA54698953A7F84"
+    l2ProxyAdminOwner = "0x30c0633e2f022db2e5bde14a8fa54698953a9095"
+    systemConfigOwner = "0xE2B7185308C3eE2898ec612A0053Dd4DE6258526"
+    unsafeBlockSigner = "0x9932951828435d156EEfcAb3b10EFA344227Fe05"
+    batcher = "0x3cA09df20A4f3d8A515F4d414cd79aeb787dAfF4"
+    proposer = "0xa3b437927099DAFedf12084a065526ebeF5599a8"
+    challenger = "0x0954cE098BD24f7cc5594437457985055DC90412"
+  [chains.customGasToken]
+    name = "WhiteBIT Coin"
+    symbol = "WBT"
+    initialLiquidity="0xca6fd59321035862c80000"
+    liquidityControllerOwner = "0x30c0633E2F022db2e5BdE14A8Fa54698953a9095"
+

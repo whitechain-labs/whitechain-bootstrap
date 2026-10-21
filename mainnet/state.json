@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "opDeployerVersion": "v0.8.1-319e3da9-1791906182",
+  "create2Salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "appliedIntent": null,
+  "superchainContracts": null,
+  "superchainRoles": null,
+  "implementationsDeployment": null,
+  "opChainDeployments": null,
+  "l1StateDump": null,
+  "DeploymentCalldata": null
+}
+

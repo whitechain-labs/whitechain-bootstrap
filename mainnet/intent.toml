@@ -1,6 +1,6 @@
 configType = "custom"
 opDeployerVersion = "v0.8.1-319e3da9-1791906182"
-l1ChainID = 11155111
+l1ChainID = 1
 fundDevAccounts = false
 l1ContractsLocator = "embedded"
 l2ContractsLocator = "embedded"
@@ -16,7 +16,7 @@ useInterop = false
   Challenger = "0x0954cE098BD24f7cc5594437457985055DC90412"
 
 [[chains]]
-  id = "0x00000000000000000000000000000000000000000000000000000000000008c9"
+  id = "0x0000000000000000000000000000000000000000000000000000000000000753"
   baseFeeVaultRecipient = "0x602BAEB79a3c70e28b3b3AeaA79056282BAa30C7"
   l1FeeVaultRecipient = "0x602BAEB79a3c70e28b3b3AeaA79056282BAa30C7"
   sequencerFeeVaultRecipient = "0x602BAEB79a3c70e28b3b3AeaA79056282BAa30C7"
@@ -43,4 +43,3 @@ useInterop = false
     symbol = "WBT"
     initialLiquidity="0xca6fd59321035862c80000"
     liquidityControllerOwner = "0x30c0633E2F022db2e5BdE14A8Fa54698953a9095"
-

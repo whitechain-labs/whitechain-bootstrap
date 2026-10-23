@@ -13,7 +13,7 @@ useInterop = false
   SuperchainProxyAdminOwner = "0x568440132075d4E1c3E42111EF561636f4956eAd"
   SuperchainGuardian = "0x5918870d5391e0610d7624837cABEd9d4AbEeeE0"
   ProtocolVersionsOwner = "0x568440132075d4E1c3E42111EF561636f4956eAd"
-  Challenger = ""
+  Challenger = "0x0ad1510D7757c5a8dDDaCc69497815Ad21efD264"
 
 [[chains]]
   id = "0x0000000000000000000000000000000000000000000000000000000000000753"
@@ -34,10 +34,10 @@ useInterop = false
     l1ProxyAdminOwner = "0x568440132075d4E1c3E42111EF561636f4956eAd"
     l2ProxyAdminOwner = "0x679540132075d4e1c3e42111ef561636f4957fbe"
     systemConfigOwner = "0x8da4Ce0f49E472fb6F892c779b3E63C7a55B23aF"
-    unsafeBlockSigner = ""
-    batcher = ""
-    proposer = ""
-    challenger = ""
+    unsafeBlockSigner = "0xBfea0b467A57Aa8516204E3aa057c8f583371476"
+    batcher = "0x681FCc4272c14f70203Ea655B1EAF9A20557a473"
+    proposer = "0x077843C51bC1c464899879F77fa02B98ee5A00d9"
+    challenger = "0x0ad1510D7757c5a8dDDaCc69497815Ad21efD264"
   [chains.customGasToken]
     name = "WhiteBIT Coin"
     symbol = "WBT"

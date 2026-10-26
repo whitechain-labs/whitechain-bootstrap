@@ -10,18 +10,18 @@ useInterop = false
   l2BlockTime = 1
 
 [superchainRoles]
-  SuperchainProxyAdminOwner = "0x1FAF633e2f022Db2e5BDe14A8FA54698953A7F84"
-  SuperchainGuardian = "0x1006E813FEcd3E3ceE2593BB117FCa9bFd0160b9"
-  ProtocolVersionsOwner = "0x1FAF633e2f022Db2e5BDe14A8FA54698953A7F84"
-  Challenger = "0x0954cE098BD24f7cc5594437457985055DC90412"
+  SuperchainProxyAdminOwner = "0x568440132075d4E1c3E42111EF561636f4956eAd"
+  SuperchainGuardian = "0x5918870d5391e0610d7624837cABEd9d4AbEeeE0"
+  ProtocolVersionsOwner = "0x568440132075d4E1c3E42111EF561636f4956eAd"
+  Challenger = "0x0ad1510D7757c5a8dDDaCc69497815Ad21efD264"
 
 [[chains]]
   id = "0x0000000000000000000000000000000000000000000000000000000000000753"
-  baseFeeVaultRecipient = "0x602BAEB79a3c70e28b3b3AeaA79056282BAa30C7"
-  l1FeeVaultRecipient = "0x602BAEB79a3c70e28b3b3AeaA79056282BAa30C7"
-  sequencerFeeVaultRecipient = "0x602BAEB79a3c70e28b3b3AeaA79056282BAa30C7"
-  operatorFeeVaultRecipient = "0x602BAEB79a3c70e28b3b3AeaA79056282BAa30C7"
-  chainFeesRecipient = "0x602BAEB79a3c70e28b3b3AeaA79056282BAa30C7"
+  baseFeeVaultRecipient = "0x81a60e10996B30356361865a8A00B43231320C31"
+  l1FeeVaultRecipient = "0x81a60e10996B30356361865a8A00B43231320C31"
+  sequencerFeeVaultRecipient = "0x81a60e10996B30356361865a8A00B43231320C31"
+  operatorFeeVaultRecipient = "0x81a60e10996B30356361865a8A00B43231320C31"
+  chainFeesRecipient = "0x81a60e10996B30356361865a8A00B43231320C31"
   eip1559DenominatorCanyon = 250
   eip1559Denominator = 100
   eip1559Elasticity = 6
@@ -31,15 +31,15 @@ useInterop = false
   minBaseFee = 5000000000
   daFootprintGasScalar = 0
   [chains.roles]
-    l1ProxyAdminOwner = "0x1FAF633e2f022Db2e5BDe14A8FA54698953A7F84"
-    l2ProxyAdminOwner = "0x30c0633e2f022db2e5bde14a8fa54698953a9095"
-    systemConfigOwner = "0xE2B7185308C3eE2898ec612A0053Dd4DE6258526"
-    unsafeBlockSigner = "0x9932951828435d156EEfcAb3b10EFA344227Fe05"
-    batcher = "0x3cA09df20A4f3d8A515F4d414cd79aeb787dAfF4"
-    proposer = "0xa3b437927099DAFedf12084a065526ebeF5599a8"
-    challenger = "0x0954cE098BD24f7cc5594437457985055DC90412"
+    l1ProxyAdminOwner = "0x568440132075d4E1c3E42111EF561636f4956eAd"
+    l2ProxyAdminOwner = "0x679540132075d4e1c3e42111ef561636f4957fbe"
+    systemConfigOwner = "0x8da4Ce0f49E472fb6F892c779b3E63C7a55B23aF"
+    unsafeBlockSigner = "0xBfea0b467A57Aa8516204E3aa057c8f583371476"
+    batcher = "0x681FCc4272c14f70203Ea655B1EAF9A20557a473"
+    proposer = "0x077843C51bC1c464899879F77fa02B98ee5A00d9"
+    challenger = "0x0ad1510D7757c5a8dDDaCc69497815Ad21efD264"
   [chains.customGasToken]
     name = "WhiteBIT Coin"
     symbol = "WBT"
-    initialLiquidity="0xca6fd59321035862c80000"
-    liquidityControllerOwner = "0x30c0633E2F022db2e5BdE14A8Fa54698953a9095"
+    initialLiquidity="0xa56fa5b99019a5c8000000"
+    liquidityControllerOwner = "0x679540132075d4e1c3e42111ef561636f4957fbe"
